@@ -12,8 +12,11 @@ main() {
     expect(counter.count, equals(3));
   });
 
-  group('testing counter BLoC', (){
-// im
+  group('testing counter BLoC', () {
+    test('bloc exists', () {
+      //Arrange
+      CounterBloc counterBloc = CounterBloc(counter: Counter(initialValue: 2));
 
+    });
   });
 }
