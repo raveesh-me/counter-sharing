@@ -12,11 +12,15 @@ main() {
     expect(counter.count, equals(3));
   });
 
-  group('testing counter BLoC', () {
-    test('bloc exists', () {
-      //Arrange
-      CounterBloc counterBloc = CounterBloc(counter: Counter(initialValue: 2));
-
-    });
+  test('testing counter BLoC', () {
+    //Arrange
+    CounterBloc counterBloc = CounterBloc(counter: Counter(initialValue: 2));
+    //Act
+    counterBloc.increment();
+    //Assert
+    expect(counterBloc.countStream, emits(3));
+    //clean
+    counterBloc.dispose();
   });
+
 }
