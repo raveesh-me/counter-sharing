@@ -14,7 +14,7 @@ main() {
 
   test('testing counter BLoC', () {
     //Arrange
-    CounterBloc counterBloc = CounterBloc(counter: Counter(initialValue: 2));
+    CounterBloc counterBloc = CounterBloc(initialValue: 2);
     //Act
     counterBloc.increment();
     //Assert

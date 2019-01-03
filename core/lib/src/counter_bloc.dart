@@ -4,8 +4,8 @@ import 'package:rxdart/rxdart.dart';
 class CounterBloc{
   Counter _counter;
 
-  CounterBloc({Counter counter}){
-    this._counter = counter ?? Counter();
+  CounterBloc({int initialValue}){
+    this._counter = Counter(initialValue: initialValue);
   }
 
   BehaviorSubject<int> _counterSubject = BehaviorSubject<int>();
