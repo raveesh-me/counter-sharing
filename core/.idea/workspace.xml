@@ -6,7 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="" />
+    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../web/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -35,8 +38,8 @@
       <file leaf-file-name="counter_bloc.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/counter_bloc.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="299">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -78,11 +81,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1473" />
-    <option name="y" value="251" />
-    <option name="width" value="1024" />
-    <option name="height" value="555" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="28" />
+    <option name="width" value="683" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -300,7 +302,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1366" height="740" extended-state="6" />
+    <frame x="1366" y="0" width="960" height="1080" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -312,11 +314,11 @@
       <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.4989011" weight="0.32939914" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59392047" weight="0.5188781" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5496049" visible="true" weight="0.33049405" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5496049" visible="true" weight="0.20927724" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26593408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -493,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/counter_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="299">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
