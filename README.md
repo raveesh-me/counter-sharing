@@ -1,4 +1,4 @@
-# counter-sharing
+# BLoC Sharing Counter
 A counter app with code sharing between AngularDart and Flutter
 
 * core folder cotains the core logic of the app. It exports the BLoC responsible for providing:
