@@ -9,7 +9,7 @@ class CounterBloc{
   }
 
   BehaviorSubject<int> _counterSubject = BehaviorSubject<int>();
-  get countStream => _counterSubject.stream;
+  Stream<int> get countStream => _counterSubject.stream;
 
   increment(){
     _counter.increment();
