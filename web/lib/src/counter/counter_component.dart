@@ -10,7 +10,7 @@ import 'package:angular/angular.dart';
     <button (click)="increment()">Increment</button>
   ''',
 )
-class CounterComponent implements OnInit {
+class CounterComponent implements OnInit, OnDestroy {
 
   counter.CounterBloc bloc = counter.CounterBloc();
   int count = 0;
@@ -21,6 +21,10 @@ class CounterComponent implements OnInit {
     bloc.countStream.listen((data) {
       count = data;
     });
+  }
+  @override
+  void ngOnDestroy(){
+    bloc.dispose();
   }
   increment() => bloc.increment();
 }
