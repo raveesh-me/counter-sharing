@@ -12,9 +12,7 @@ class CounterBloc{
   Stream<int> get countStream => _counterSubject.stream;
 
   init(CounterStore store) async {
-    Map<String, int> _map = await store.counter;
-    int _initalValue = _map['count'];
-    this._counter = Counter(initialValue:_initalValue);
+
   }
 
   increment(){
