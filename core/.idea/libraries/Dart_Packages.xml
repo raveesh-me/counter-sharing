@@ -462,7 +462,6 @@
       <root url="file://$USER_HOME$/MyCode/sdk/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/MyCode/sdk/flutter/packages/flutter_test/lib" />
     </CLASSES>
-    <JAVADOC />
     <SOURCES />
   </library>
 </component>
