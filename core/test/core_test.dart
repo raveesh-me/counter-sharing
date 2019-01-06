@@ -2,16 +2,6 @@ import 'package:test/test.dart';
 import 'package:core/core.dart';
 
 main() {
-  test('testing the counter', () {
-    //Setup (Arrange)
-    Counter counter = Counter(initialValue: 2);
-    assert(counter.count == 2);
-    //Execution (Act)
-    counter.increment();
-    //Validation (Assert)
-    expect(counter.count, equals(3));
-  });
-
   test('testing counter BLoC', () {
     //Arrange
     CounterBloc counterBloc = CounterBloc(initialValue: 2);
@@ -21,6 +11,17 @@ main() {
     expect(counterBloc.countStream, emits(3));
     //clean
     counterBloc.dispose();
+  });
+
+  group('testing counter BLoC with Store', (){
+    test('testing init', (){
+      //Arrange
+      CounterBloc counterBloc = CounterBloc();
+      //Act
+      counterBloc.init(CounterStore());
+      //Assert
+      expect(counterBloc.countStream, emits(24));
+    });
   });
 
 }
