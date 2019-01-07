@@ -1,0 +1,1 @@
+//implements the abstract counter store class with shared_preferences
