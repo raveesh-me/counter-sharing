@@ -14,7 +14,7 @@ main() {
   });
 
   group('testing counter BLoC with Store', () {
-    test('testing init', () async {
+    test('testing async factory', () async {
       //Arrange
       CounterBloc counterBloc = await CounterBloc.fromStore(CounterStore());
       //Assert
