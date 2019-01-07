@@ -20,22 +20,29 @@ main() {
       CounterBloc bloc = await CounterBloc.fromStore(NullCounterStore());
       //assert
       expect(bloc.countStream, emits(0));
+      //clean
+      bloc.dispose();
     });
     test('async factory needs to work with a value store', () async {
       //arrange
       CounterBloc bloc = await CounterBloc.fromStore(ValueCounterStore());
       //assert
       expect(bloc.countStream, emits(24));
+      //clean
+      bloc.dispose();
     });
     test('increment should work with null store', () async {
       //arrange
       CounterBloc bloc = await CounterBloc.fromStore(NullCounterStore());
       //act
       bloc.increment();
-      CounterBloc newbloc = await CounterBloc.fromStore(NullCounterStore());
+      CounterBloc newBloc = await CounterBloc.fromStore(NullCounterStore());
       //assert
       expect(bloc.countStream, emits(1));
-      expect(newbloc.countStream, emits(0));
+      expect(newBloc.countStream, emits(0));
+      //clean
+      bloc.dispose();
+      newBloc.dispose();
     });
 
     test('increment should work with value store', () async {
@@ -46,6 +53,9 @@ main() {
       CounterBloc newBloc = await CounterBloc.fromStore(ValueCounterStore());
       //assert
       expect(newBloc.countStream, emits(25));
+      //clean
+      bloc.dispose();
+      newBloc.dispose();
     });
   });
 }

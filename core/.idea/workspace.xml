@@ -6,9 +6,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="">
+    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="refactor: counter() -&gt; getCountMap()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/store/counter_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/store/counter_store.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -22,14 +24,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59587276">
+    <splitter split-orientation="horizontal" split-proportion="0.6841202">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="core_test.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="core_test.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/core_test.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+                <state relative-caret-position="1123">
+                  <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -37,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dummy_counter_stores.dart" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dummy_counter_stores.dart" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+                <state relative-caret-position="478">
+                  <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -49,8 +51,8 @@
           <file leaf-file-name="counter_store.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/src/store/counter_store.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="6" selection-start-column="6" selection-end-column="6" />
+                <state relative-caret-position="72">
+                  <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -62,11 +64,20 @@
           <file leaf-file-name="counter_bloc.dart" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/src/counter/counter_bloc.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+                <state relative-caret-position="744">
+                  <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="counter.dart" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/src/counter/counter.dart">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="6" selection-start-line="6" selection-end-line="7" />
                 </state>
               </provider>
             </entry>
@@ -99,18 +110,16 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/src/keyval_storage/keyval_storage.dart" />
         <option value="$PROJECT_DIR$/lib/core.dart" />
+        <option value="$PROJECT_DIR$/test/core_test.dart" />
         <option value="$PROJECT_DIR$/lib/src/store/counter_store.dart" />
         <option value="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" />
-        <option value="$PROJECT_DIR$/test/core_test.dart" />
         <option value="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1480" />
-    <option name="y" value="166" />
-    <option name="width" value="1024" />
-    <option name="height" value="555" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1110,16 +1119,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546840640119</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor: counter() -&gt; getCountMap()">
+      <created>1546840931737</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1546840931737</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_in_core_test_dart - 2019.01.03 at 09h 58m 17s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="tests_in_core_test_dart - 2019.01.03 at 09h 59m 55s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
     <history-entry file="tests_in_core_test_dart - 2019.01.03 at 10h 00m 20s.xml">
       <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
@@ -1144,12 +1154,19 @@
     <history-entry file="tests_in_core_test_dart - 2019.01.07 at 11h 31m 25s.xml">
       <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
+    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 11h 33m 16s.xml">
+      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 11h 51m 57s.xml">
+      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="2050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -1157,13 +1174,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45039508" side_tool="true" weight="0.32901832" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.4989011" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59392047" weight="0.51794875" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59392047" visible="true" weight="0.19393939" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32948717" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5496049" visible="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5496049" weight="0.32948717" />
       <window_info anchor="right" id="Flutter Outline" order="6" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16547278" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16547278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -1440,13 +1457,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/lib/src/counter/counter.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1461,37 +1471,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/store/counter_store.dart">
+    <entry file="file://$PROJECT_DIR$/lib/src/counter/counter.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/core_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1123">
+          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/counter/counter_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        <state relative-caret-position="744">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart">
+    <entry file="file://$PROJECT_DIR$/lib/src/store/counter_store.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="72">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/core_test.dart">
+    <entry file="file://$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="478">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -28,6 +28,7 @@ class CounterBloc {
 
   increment() {
     _counter.increment();
+    if (_store != null) _store.setCount(_counter.count);
     _counterSubject.add(_counter.count);
   }
 
