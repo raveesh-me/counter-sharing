@@ -13,13 +13,12 @@ main() {
     counterBloc.dispose();
   });
 
-  group('testing counter BLoC with Store', (){
-    test('testing init', () async{
+  group('testing counter BLoC with Store', () {
+    test('testing init', () async {
       //Arrange
-      CounterBloc counterBloc = CounterBloc.fromStore(CounterStore());
+      CounterBloc counterBloc = await CounterBloc.fromStore(CounterStore());
       //Assert
       expect(counterBloc.countStream, emits(24));
     });
   });
-
 }
