@@ -1,5 +1,5 @@
 class CounterStore {
-  Future<Map<String, int>> getCountMap() async=> {
-    'count' : 24,
-  };
+  Future<Map<String, int>> getCountMap() async => {
+        'count': 24,
+      };
 }
