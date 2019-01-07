@@ -16,7 +16,7 @@ class CounterBloc {
   }
 
   static Future<CounterBloc> fromStore(CounterStore store) async {
-    Map<String, int> _map = await store.counter();
+    Map<String, int> _map = await store.getCountMap();
     int _initialValue;
     if (_map == null)
       _initialValue = 0;
