@@ -14,11 +14,9 @@ main() {
   });
 
   group('testing counter BLoC with Store', (){
-    test('testing init', (){
+    test('testing init', () async{
       //Arrange
-      CounterBloc counterBloc = CounterBloc();
-      //Act
-      counterBloc.init(CounterStore());
+      CounterBloc counterBloc = CounterBloc.fromStore(CounterStore());
       //Assert
       expect(counterBloc.countStream, emits(24));
     });
