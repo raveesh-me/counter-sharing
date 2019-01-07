@@ -6,11 +6,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="refactor: counter() -&gt; getCountMap()">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/store/counter_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/store/counter_store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" afterDir="false" />
+    <list default="true" id="9bc11d03-db6e-46c1-a142-f4e28157cc52" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/test/core_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/core_test.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -24,14 +21,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6841202">
+    <splitter split-orientation="horizontal" split-proportion="0.47296137">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="core_test.dart" pinned="false" current-in-tab="false">
+          <file leaf-file-name="core_test.dart" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/core_test.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1123">
-                  <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+                <state relative-caret-position="-962">
+                  <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -39,10 +36,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dummy_counter_stores.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dummy_counter_stores.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="478">
+                <state relative-caret-position="552">
                   <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
                 </state>
               </provider>
@@ -64,7 +61,7 @@
           <file leaf-file-name="counter_bloc.dart" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/src/counter/counter_bloc.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="744">
+                <state relative-caret-position="704">
                   <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
@@ -110,10 +107,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/src/keyval_storage/keyval_storage.dart" />
         <option value="$PROJECT_DIR$/lib/core.dart" />
-        <option value="$PROJECT_DIR$/test/core_test.dart" />
         <option value="$PROJECT_DIR$/lib/src/store/counter_store.dart" />
         <option value="$PROJECT_DIR$/lib/src/counter/counter_bloc.dart" />
         <option value="$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart" />
+        <option value="$PROJECT_DIR$/test/core_test.dart" />
       </list>
     </option>
   </component>
@@ -979,6 +976,11 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="increment should work with value store in core_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/core_test.dart" />
+      <option name="scope" value="GROUP_OR_TEST_BY_NAME" />
+      <option name="testName" value="increment should work with value store" />
+    </configuration>
     <configuration name="bloc exists" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="bloc exists" />
       <option name="testFile" value="$PROJECT_DIR$/test/core_test.dart" />
@@ -1020,10 +1022,12 @@
       <item itemvalue="Flutter Test.tests in core_test.dart" />
       <item itemvalue="Flutter Test.testing counter BLoC" />
       <item itemvalue="Flutter Test.bloc exists" />
+      <item itemvalue="Dart Test.increment should work with value store in core_test.dart" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Flutter Test.tests in core_test.dart" />
+        <item itemvalue="Dart Test.increment should work with value store in core_test.dart" />
         <item itemvalue="Flutter Test.bloc exists" />
         <item itemvalue="Flutter Test.testing counter BLoC" />
         <item itemvalue="Flutter Test.tests in core_test.dart" />
@@ -1126,22 +1130,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546840931737</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="makes tests pass. Increment is working with and without store">
+      <created>1546842904050</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1546842904050</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_in_core_test_dart - 2019.01.03 at 10h 00m 20s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 09h 20m 33s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 09h 41m 04s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 09h 42m 46s.xml">
-      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
     <history-entry file="tests_in_core_test_dart - 2019.01.07 at 09h 45m 27s.xml">
       <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
@@ -1160,6 +1159,18 @@
     <history-entry file="tests_in_core_test_dart - 2019.01.07 at 11h 51m 57s.xml">
       <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
+    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 12h 02m 07s.xml">
+      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 12h 02m 23s.xml">
+      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="increment_should_work_with_value_store_in_core_test_dart - 2019.01.07 at 12h 06m 03s.xml">
+      <configuration name="increment should work with value store in core_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_core_test_dart - 2019.01.07 at 12h 06m 28s.xml">
+      <configuration name="tests in core_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="2050000" />
@@ -1174,13 +1185,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45039508" side_tool="true" weight="0.32901832" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.4989011" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59392047" visible="true" weight="0.19393939" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.59392047" visible="true" weight="0.19393939" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5496049" weight="0.32948717" />
       <window_info anchor="right" id="Flutter Outline" order="6" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16547278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16547278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -1231,7 +1242,8 @@
     <MESSAGE value="passes the async factory test" />
     <MESSAGE value="removes the init function" />
     <MESSAGE value="refactor: counter() -&gt; getCountMap()" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: counter() -&gt; getCountMap()" />
+    <MESSAGE value="makes tests pass. Increment is working with and without store" />
+    <option name="LAST_COMMIT_MESSAGE" value="makes tests pass. Increment is working with and without store" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/src/counter_bloc.dart" />
@@ -1478,19 +1490,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/core_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1123">
-          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/counter/counter_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
+        <state relative-caret-position="704">
           <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -1507,8 +1509,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/helpers/dummy_counter_stores.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="552">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/core_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-962">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -50,9 +50,12 @@ main() {
       CounterBloc bloc = await CounterBloc.fromStore(ValueCounterStore());
       //act
       bloc.increment();
+      bloc.increment();
       CounterBloc newBloc = await CounterBloc.fromStore(ValueCounterStore());
       //assert
-      expect(newBloc.countStream, emits(25));
+      expect(newBloc.countStream, emits(26));
+      newBloc.increment();
+      expect(newBloc.countStream, emits(27));
       //clean
       bloc.dispose();
       newBloc.dispose();
