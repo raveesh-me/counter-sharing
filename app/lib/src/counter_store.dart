@@ -1,16 +1,21 @@
 //implements the abstract counter store class with shared_preferences
 import 'package:core/core.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class SPCounterStore implements CounterStore {
+class SharedPreferencesCounterStore implements CounterStore {
+  SharedPreferences _preferences;
+
+  SharedPreferencesCounterStore(SharedPreferences preferences) {
+    this._preferences = preferences;
+  }
+
   @override
-  Future<Map<String, int>> getCountMap() {
-    // TODO: implement getCountMap
-    return null;
+  Future<Map<String, int>> getCountMap() async {
+    return {'count': _preferences.getInt('count')};
   }
 
   @override
   setCount(int count) {
-    // TODO: implement setCount
-    return null;
+    _preferences.setInt('count', count);
   }
 }
