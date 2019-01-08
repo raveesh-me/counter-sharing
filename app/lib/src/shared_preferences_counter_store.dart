@@ -1,4 +1,3 @@
-//implements the abstract counter store class with shared_preferences
 import 'package:core/core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
