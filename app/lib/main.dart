@@ -1,9 +1,36 @@
+import 'package:app/src/shared_preferences_counter_store.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  MyAppState createState() {
+    return new MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp> {
+  CounterBloc _bloc;
+  bool _isLoading;
+
+  @override
+  void initState() {
+    super.initState();
+    _isLoading = true;
+    initBloc();
+  }
+
+  void initBloc() async {
+    SharedPreferencesCounterStore _store =
+        SharedPreferencesCounterStore(await SharedPreferences.getInstance());
+    _bloc = await CounterBloc.fromStore(_store);
+    _isLoading = false;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,9 +38,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(
+      home: _isLoading? LinearProgressIndicator() : MyHomePage(
         title: 'Flutter Demo Home Page',
-        counterBloc: CounterBloc(),
+        counterBloc: _bloc,
       ),
     );
   }
@@ -22,6 +49,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   final CounterBloc counterBloc;
   MyHomePage({Key key, this.title, this.counterBloc}) : super(key: key);
+
   final String title;
 
   @override
