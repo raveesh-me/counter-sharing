@@ -14,10 +14,11 @@ to provide functionality.
 # Workflow
 Look at the PRs for a comprehensive step by step of the process
 
-1. Implementing the core functionality with unit tests -> [!1](https://github.com/raveesh-me/counter-sharing/pull/1)
-2. Adding the flutter app and modifying the default application to use the core -> [!2](https://github.com/raveesh-me/counter-sharing/pull/2)
-3. Adding the AngularDart app, Implementing the counter, and using the core -> [!3](https://github.com/raveesh-me/counter-sharing/pull/3)
-4. Closing stream on web (`ngOnDestroy()`) -> [!4](https://github.com/raveesh-me/counter-sharing/pull/4)
+1. Implementing the core functionality with unit tests -> [#1](https://github.com/raveesh-me/counter-sharing/pull/1)
+2. Adding the flutter app and modifying the default application to use the core -> [#2](https://github.com/raveesh-me/counter-sharing/pull/2)
+3. Adding the AngularDart app, Implementing the counter, and using the core -> [#3](https://github.com/raveesh-me/counter-sharing/pull/3)
+4. Closing stream on web (`ngOnDestroy()`) -> [#5](https://github.com/raveesh-me/counter-sharing/pull/5)
+5. Offline Persistence -> [#6](https://github.com/raveesh-me/counter-sharing/pull/6)
 
 # Upcoming
 This project will finish with using local storage in respective platforms to persist the counter. That is WIP
