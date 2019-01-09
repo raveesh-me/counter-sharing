@@ -31,6 +31,7 @@ class WebCounterStore implements CounterStore {
     if(idb.IdbFactory.supported){
       idb.Transaction tx = await counterTransaction();
       tx.objectStore('counter').put(count, "count");
+      tx.completed;
     }else{
       window.localStorage.update('count', (old) => '$count');
     }
