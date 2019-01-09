@@ -18,7 +18,6 @@ class CounterComponent implements OnInit, OnDestroy {
 
   @override
   void ngOnInit() async {
-    // TODO: implement ngOnInit
     bloc = await counter.CounterBloc.fromStore(WebCounterStore());
     bloc.countStream.listen((data) {
       count = data;
